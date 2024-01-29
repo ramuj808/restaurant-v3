@@ -1,21 +1,21 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
-  Navbar,
-  NavbarBrand,
   Collapse,
+  Navbar,
   NavbarToggler,
+  NavbarBrand,
   Nav,
   NavItem,
+  NavLink,
 } from "reactstrap";
-import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Navbar dark color="primary" sticky="top" expand="md">
-      <NavbarBrand>
-        <h1 className="mt-1">Kanak Attack Restaurant</h1>
+    <Navbar dark color="dark" sticky="top" expand="md">
+      <NavbarBrand className="ms-5" href="/">
+        <h1 className="mt-1">Kanak Attack</h1>
       </NavbarBrand>
 
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
@@ -27,22 +27,21 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
+            <NavLink className="nav-link" to="/about">
+              <i className="fa fa-info fa-lg" /> About
+            </NavLink>
+          </NavItem>{" "}
+          <NavItem>
             <NavLink className="nav-link" to="/directory">
               <i className="fa fa-list fa-lg" /> Menu
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/about">
-              <i className="fa fa-info fa-lg" /> About
-            </NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink className="nav-link" to="/contact">
-              <i className="fa fa-address-card fa-lg" /> Contact
+              <i className="fa fa-address-card fa-lg" /> Contact Us
             </NavLink>
           </NavItem>
         </Nav>
-        {/* <UserLoginForm /> */}
       </Collapse>
     </Navbar>
   );
