@@ -6,8 +6,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
             </NavLink>
           </NavItem>{" "}
           <NavItem>
-            <NavLink className="nav-link" to="/directory">
+            <NavLink className="nav-link" to="/menu">
               <i className="fa fa-list fa-lg" /> Menu
             </NavLink>
           </NavItem>
