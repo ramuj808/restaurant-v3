@@ -1,7 +1,9 @@
+import { Container } from "reactstrap";
+
 const HomePage = () => {
   return (
-    <>
-      <h2>This is Us</h2>
+    <Container>
+      <h2>Our Mission</h2>
       <p>
         Food coma. Better known as <strong>KANAK ATTACK</strong> in the state of
         Hawaii. Created by Jumar Pantoca, this make-like restauranteur
@@ -9,7 +11,7 @@ const HomePage = () => {
         restaurant features broke da mouth, onolicious, authentic local food of
         the islands. Stop by or call us and grind! CheeHoo!
       </p>
-    </>
+    </Container>
   );
 };
 

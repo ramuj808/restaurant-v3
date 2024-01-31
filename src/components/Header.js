@@ -37,6 +37,11 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
+            <NavLink className="nav-link" to="/takeout">
+              <i className="fa fa-list fa-lg" /> Order Online
+            </NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink className="nav-link" to="/contact">
               <i className="fa fa-address-card fa-lg" /> Contact Us
             </NavLink>

@@ -66,18 +66,6 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label check md={{ size: 4, offset: 2 }}>
-            <Field name="agree" type="checkbox" className="form-check-input" />{" "}
-            May we contact you?
-          </Label>
-          <Col md="4">
-            <Field name="contactType" as="select" className="form-control">
-              <option>By Phone</option>
-              <option>By Email</option>
-            </Field>
-          </Col>
-        </FormGroup>
-        <FormGroup row>
           <Label htmlFor="feedback" md="2">
             Your Feedback
           </Label>
