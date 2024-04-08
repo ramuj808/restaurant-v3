@@ -15,7 +15,7 @@ const ContactForm = () => {
           </Label>
           <Col md="10">
             <Field
-              name="firstName"
+              name="first"
               placeholder="First Name"
               className="form-control"
             />
@@ -30,7 +30,7 @@ const ContactForm = () => {
           </Label>
           <Col md="10">
             <Field
-              name="lastName"
+              name="last"
               placeholder="Last Name"
               className="form-control"
             />
@@ -66,12 +66,12 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="feedback" md="2">
+          <Label htmlFor="review" md="2">
             Your Feedback
           </Label>
           <Col md="10">
             <Field
-              name="feedback"
+              name="review"
               as="textarea"
               rows="12"
               className="form-control"

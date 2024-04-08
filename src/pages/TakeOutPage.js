@@ -5,6 +5,8 @@ import shoyuChicken from "../assets/img/Shoyu-Chicken-1.jpg";
 import pokeNachos from "../assets/img/Poke-Nachos-9-683x1024.webp";
 import malasadas from "../assets/img/Malasadas-11-1365x2048.webp";
 
+// TODO: Create a function to add up menu items and pricing and apply them to all the button onClick
+
 const TakeOutPage = () => {
   return (
     <Container>
@@ -16,7 +18,12 @@ const TakeOutPage = () => {
             <Card.Body>
               <Card.Title>Loco Moco</Card.Title>
               <Card.Text>Beef patty and eggs all over rice</Card.Text>
-              <Button variant="primary">Add To Cart</Button>
+              <Button
+                onClick={() => console.log("Loco moco added!")}
+                variant="primary"
+              >
+                Add To Cart
+              </Button>
             </Card.Body>
           </Card>
         </Col>
